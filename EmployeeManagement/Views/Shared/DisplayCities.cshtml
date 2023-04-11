@@ -1,0 +1,11 @@
+﻿@model EntityLayer.City
+
+
+<option value=""> ---Select Cities--- </option>
+@if (ViewBag.CityList != null)
+{
+    foreach (var item in ViewBag.CityList)
+    {
+        <option value="@item.Value"> @item.Text </option>
+    }
+}
